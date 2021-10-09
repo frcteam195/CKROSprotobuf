@@ -22,7 +22,6 @@ autom4te.cache
 /gmock
 
 # in-tree configure-generated files
-Makefile
 src/Makefile
 /config.h
 config.log
