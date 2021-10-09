@@ -217,3 +217,4 @@ _build/
 
 # BenchmarkDotNet
 BenchmarkDotNet.Artifacts/
+build
