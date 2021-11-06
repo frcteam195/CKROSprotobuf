@@ -1,5 +1,5 @@
 all:
-	make x86_64
+	make native
 	make aarch64
 
 aarch64:
@@ -9,10 +9,10 @@ aarch64:
 	cmake ../../cmake -Dprotobuf_BUILD_TESTS=OFF -DCMAKE_TOOLCHAIN_FILE=../../aarch64_jetson_toolchain.cmake -DJETSON_TOOLCHAIN_PATH=/jetsontoolchain/bin/&& \
 	make -j8
 
-x86_64:
+native:
 	@mkdir -p build
-	@mkdir -p build/x86_64
-	cd build/x86_64 && \
+	@mkdir -p build/native
+	cd build/native && \
 	cmake ../../cmake -Dprotobuf_BUILD_TESTS=OFF && \
 	make -j8
 
