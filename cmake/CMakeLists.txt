@@ -1,6 +1,6 @@
 # Minimum CMake required
 cmake_minimum_required(VERSION 3.1.3)
-
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 if(protobuf_VERBOSE)
   message(STATUS "Protocol Buffers Configuring...")
 endif()
